@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Pega o token do ambiente
-TOKEN = os.getenv("GH_TOKEN")
+TOKEN = os.getenv("GH_TOKEN10min")
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
     "Accept": "application/vnd.github+json"
@@ -13,7 +13,7 @@ HEADERS = {
 
 # Lista de workflows a serem acionados
 WORKFLOWS = [
-    {"repo": "QueueListLog", "workflow": "queuelistsp5.yaml"},
+    {"repo": "CPT30min_aviso", "workflow": "aviso_CPT.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
