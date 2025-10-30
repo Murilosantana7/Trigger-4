@@ -14,6 +14,7 @@ HEADERS = {
 # Lista de workflows a serem acionados
 WORKFLOWS = [
     {"repo": "CPTs_expedicao", "workflow": "main_expedicao.yaml"},
+    {"repo": "prioridadeout", "workflow": "prioridadeout.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
